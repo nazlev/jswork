@@ -8,7 +8,27 @@
 <script>
     'use strict';
 
+    let a = +prompt("Введите первое число");
+    let b = +prompt("Введите второе число");
 
+    function mathOperation(a, b, operation) {
+        switch (operation) {
+            case "plus":
+                return (a + b);
+            case "minus":
+                return (a - b);
+            case "multiplication":
+                return (a * b);
+            case "division":
+                return (a / b);
+        }
+    }
+
+    alert("Сумма ваших чисел: " + mathOperation(a, b, "plus"));
+    alert("Разница: " + mathOperation(a, b, "minus"));
+    alert("Произведение: " + mathOperation(a, b, "multiplication"));
+    alert("Частное: " + mathOperation(a, b, "division"));
+    alert("Спасибо за использование программы!");
 </script>
 </body>
 </html>

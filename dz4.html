@@ -8,6 +8,40 @@
 <script>
     'use strict';
 
+    let a = +prompt("Введите первое число");
+    let b = +prompt("Введите второе число");
+
+    function usePlus(a, b) {
+        return (a + b);
+    }
+
+    function useMinus(a, b) {
+        if (a > b) {
+            return (a - b);
+        } else {
+            return (b - a);
+        }
+    }
+
+    function useDivision(a, b) {
+        if (a > b) {
+            return (a / b);
+        } else {
+            return (b / a);
+        }
+    }
+
+    function useMultiplication(a, b) {
+        return (a * b);
+    }
+
+    alert("Сумма ваших чисел: " + usePlus(a, b));
+    alert("Разница ваших чисел: " + useMinus(a, b));
+    alert("Частное ваших чисел: " + useDivision(a, b));
+    alert("Произведение ваших чисел: " + useMultiplication(a, b));
+
+
+
 </script>
 </body>
 </html>
