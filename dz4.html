@@ -8,49 +8,35 @@
 <script>
     'use strict';
 
-   // 1.Получить все товары, укоторых есть фотографии, можете использовать метод filter https://mzl.la/2qROQ
-    //2.Отсортируйте товары по цене(от низкой цены к высокой ), можете использовать метод sort
-    //https://mzl.la/2Y79hbZ , как устроен sort можно посмотреть например здесь https://youtu.be/O2pusOp0gC0
+    class Post {
+        constructor(author, text, date) {
+            this.author = author;
+            this.text = text;
+            this.date = date;
+        }
+        edit() {
+            this.text = prompt("Введите текст");
+        }
+    }
+    const post1 = new Post('Mark', "Text1", 19.09);
+    const post2 = new Post('Anna', "Text2", 18.09);
+    const post3 = new Post('Alex', "Text3",  20.09);
+    post1.edit();
+    post2.edit();
+    post3.edit();
 
-
-        const products = [
-            {
-                id: 3,
-                price: 127,
-                photos: [
-                    "1.jpg",
-                    "2.jpg",
-                ]
-            },
-            {
-                id: 5,
-                price: 499,
-                photos: []
-            },
-            {
-                id: 10,
-                price: 26,
-                photos: [
-                    "3.jpg"
-                ]
-            },
-            {
-                id: 8,
-                price: 78,
-            }
-            ]
-
-        let result = products.filter(product => product.photos>[0]);
-        console.log(result);
-
-        let result2 = products.sort(function (box1, box2) {
-            if (box1.price > box2.price) {
-                return 1;
-            } else {
-                return -1;
-            }
-        })
-        console.log(result2);
+    class AttachedPost extends Post{
+        constructor(author, text, date, highlighted) {
+            super(author, text, date);
+            this.highlighted = highlighted;
+        }
+        edit() {
+            this.text = prompt("Введите текст");
+            this.highlighted = "true";
+        }
+    }
+    const post4 = new AttachedPost("Inna", "Text4", 21.09, "false");
+    post4.edit();
 </script>
 </body>
 </html>

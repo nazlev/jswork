@@ -8,25 +8,38 @@
 <script>
     'use strict';
 
-    const products = [
-        {
-            id: 3,
-            price: 200,
-        },
-        {
-            id: 4,
-            price: 900,
-        },
-        {
-            id: 1,
-            price: 1000,
-        },
-    ];
+    let poster = {
+        edit: function () {
+        this.text = prompt("Введите текст");
+        }
+    }
 
-    products.forEach((box) => {
-        box.price = box.price * 0.85;
-        console.log("Ваша цена со скидкой: " + box.price)
-    })
+    function Post(author, text, date) {
+        this.author = author;
+        this.text = text;
+        this.date = date;
+    }
+    Post.prototype = poster;
+    const post1 = new Post('Mark', "Text1", 19.09);
+    const post2 = new Post('Anna', "Text2", 18.09);
+    const post3 = new Post('Alex', "Text3",  20.09);
+    post1.edit();
+    post2.edit();
+    post3.edit();
+
+    let posterNew = {
+        edit: function () {
+            this.text = prompt("Введите текст");
+            this.highlighted = "true";
+        }
+    }
+    function AttachedPost(author, text, date, highlighted) {
+        Post.call(this, author, text, date);
+        this.highlighted = highlighted;
+    }
+    AttachedPost.prototype = posterNew;
+    const post4 = new AttachedPost("Inna", "Text4", 21.09, "false");
+    post4.edit();
 </script>
 </body>
 </html>
