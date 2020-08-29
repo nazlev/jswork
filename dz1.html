@@ -3,24 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<script>
-    'use strict';
-    let discount = {
-        make25PercentDiscount: function() {
-            this.price = this.price * 0.75;
-        }
-    }
-    function Product(name, price) {
-        this.name = name;
-        this.price = price;
-    }
-    Product.prototype = discount;
-    const product1 = new Product('Mercedes', 500);
-    const product2 = new Product('Bentley', 700);
-    product1.make25PercentDiscount();
-    product2.make25PercentDiscount();
-</script>
+<button>Показать модальное окно</button>
+
+<div class="wrap hidden">
+    <span>&times;</span>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nesciunt nobis dolorum molestiae saepe libero repudiandae magnam, quae excepturi. Optio commodi dolorum, ullam harum assumenda explicabo exercitationem est soluta id.
+</div>
+
+<script src="modal.js"></script>
 </body>
 </html>

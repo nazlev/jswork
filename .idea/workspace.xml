@@ -10,13 +10,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22816c99-17f7-4a10-9e26-3befa2019801" name="Default Changelist" comment="dz3">
+    <list default="true" id="22816c99-17f7-4a10-9e26-3befa2019801" name="Default Changelist" comment="dz4">
+      <change afterPath="$PROJECT_DIR$/img.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style2.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dz1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dz1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dz2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dz2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dz3.html" beforeDir="false" afterPath="$PROJECT_DIR$/dz3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dz4.html" beforeDir="false" afterPath="$PROJECT_DIR$/dz4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dz5.html" beforeDir="false" afterPath="$PROJECT_DIR$/dz5.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -52,6 +56,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SvnConfiguration">
@@ -71,7 +76,12 @@
       <workItem from="1597855516162" duration="7399000" />
       <workItem from="1597871741899" duration="816000" />
       <workItem from="1598376532291" duration="1502000" />
-      <workItem from="1598389075451" duration="4859000" />
+      <workItem from="1598389075451" duration="5169000" />
+      <workItem from="1598549410487" duration="3654000" />
+      <workItem from="1598558326875" duration="4154000" />
+      <workItem from="1598607366773" duration="4440000" />
+      <workItem from="1598688092303" duration="4804000" />
+      <workItem from="1598700251496" duration="1318000" />
     </task>
     <task id="LOCAL-00001" summary="dz">
       <created>1597311003852</created>
@@ -101,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597872300185</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="dz4">
+      <created>1598395650802</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598395650802</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,7 +140,8 @@
     <MESSAGE value="dz1" />
     <MESSAGE value="dz" />
     <MESSAGE value="dz3" />
-    <option name="LAST_COMMIT_MESSAGE" value="dz3" />
+    <MESSAGE value="dz4" />
+    <option name="LAST_COMMIT_MESSAGE" value="dz4" />
   </component>
   <component name="WindowStateProjectService">
     <state x="129" y="55" key="DiffContextDialog" timestamp="1597311022379">
@@ -134,10 +152,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="129" y="55" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1597742552791" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1597872320467">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1598395665816">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597872320467" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598395665816" />
     <state x="463" y="77" key="git4idea.branch.GitSmartOperationDialog" timestamp="1597742537243">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
