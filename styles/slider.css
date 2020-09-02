@@ -1,0 +1,79 @@
+.slider {
+    height: 98vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.sliderPhoto {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.hiddenPhoto {
+    visibility: hidden;
+}
+
+.sliderPhoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.back, .next {
+    position: absolute;
+    top: 47%;
+    width: auto;
+    z-index: 3;
+    color: #bbbbbb;
+    font-weight: bold;
+    font-size: 45px;
+    transition: 0.6s ease;
+    padding: 16px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.next {
+    right: 0;
+}
+
+.next:hover, .back:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@keyframes rightToLeft {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.slider-rightToLeftAnimation {
+    animation-name: rightToLeft;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    position: relative;
+}
+
+@keyframes leftToRight {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.slider-leftToRightAnimation {
+    animation-name: leftToRight;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    position: relative;
+}

@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<button>Показать модальное окно</button>
+<div class="slider">
+    <div class="sliderPhoto hiddenPhoto">
+        <img src="photo/photo1.jpg" alt="photo" width="1024px" height="640px">
+    </div>
+    <div class="sliderPhoto hiddenPhoto">
+        <img src="photo/photo2.jpg" alt="photo" width="1024px" height="640px">
+    </div>
+    <div class="sliderPhoto hiddenPhoto">
+        <img src="photo/photo3.jpg" alt="photo" width="1024px" height="640px">
+    </div>
 
-<div class="wrap hidden">
-    <span>&times;</span>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nesciunt nobis dolorum molestiae saepe libero repudiandae magnam, quae excepturi. Optio commodi dolorum, ullam harum assumenda explicabo exercitationem est soluta id.
+    <a class="back" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
-
-<script src="modal.js"></script>
+<script src="script/slider.js"></script>
 </body>
 </html>

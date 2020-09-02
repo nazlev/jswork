@@ -1,0 +1,40 @@
+.header {
+    width: 100%;
+    background: #cccccc;
+}
+
+.basket {
+    height: 50px;
+    width: 130px;
+    background-color: ghostwhite;
+    margin-left: 90%;
+    margin-top: 15px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.basketMenu {
+    width: 400px;
+    padding: 10px;
+}
+
+.productHead{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.basketIn {
+    margin-top: 20px;
+    height: 40px;
+    background: forestgreen;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.productRemoveBtn {
+    cursor: pointer;
+}
